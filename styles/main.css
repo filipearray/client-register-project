@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+body{
+    background-color: var(--var-secundary-color);
+}
+
+:root{
+    --var-white: #fff;
+    --var-primary-color: #0D1117;
+    --var-secundary-color: #161B22; 
+}
+
+header{
+    text-align: center;
+    background-color: var(--var-primary-color);
+    color: var(--var-white);
+    padding: 10px;
+}
+
+h1::selection{
+    background-color: var(--var-white);
+    color: var(--var-primary-color); /* Analogous colors */
+}
+
+main{
+    display: flex;
+    flex-grow: 1;
+    width: 90%;
+    background-color: var(--var-white);
+    margin: 5vh auto;
+    flex-direction: column; /* The data will grow vertically 'cause of that. */
+    padding: 50px;
+    align-items: flex-start;
+    gap: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background-color: var(--var-primary-color);
+}

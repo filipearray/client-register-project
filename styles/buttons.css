@@ -1,0 +1,22 @@
+:root{
+    --var-white: #fff;
+    --var-primary-color: #0D1117;
+    --var-secundary-color: #161B22; 
+}
+
+#newClientBtn{
+    padding: 10px;
+    background-color: var(--var-secundary-color);
+    color: var(--var-white);    
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#newClientBtn:active {
+    box-shadow: none;
+    transform: translateY(2px); /* Moves the button 2 pixels down. */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) inset;
+  }
