@@ -1,0 +1,27 @@
+:root{
+    --var-white: #fff;
+    --var-primary-color: #0D1117;
+    --var-secundary-color: #161B22; 
+    --var-shadow: rgba(0, 0, 0, 0.25);
+}
+
+td{
+    color: var(--var-white);
+    height: 50px;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+tr{
+    transition: 0.3s;
+}
+
+tr:hover{
+    background-color: var(--var-secundary-color);
+}
+
+td:nth-child(5){
+    background-color: #0D1117;
+}
+

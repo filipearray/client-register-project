@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/posterior.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <main>
         <button type="button" id="newClientBtn">New Client</button>
 
-        <table>
+        <table id="tableClient">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -50,11 +51,11 @@
                 </header>
                 <!-- Modal Inputs -->
                 <form id="form">
-                    <input type="text" id="name" dataIndex="new" class="modalField" placeholder="Client Name" required>
-                    <input type="email" id="email" dataIndex="new" class="modalField" placeholder="E-mail" required>
-                    <input type="number" id="phoneNumber" dataIndex="new" class="modalField" placeholder="Number"
+                    <input type="text" id="name" data-index="new" class="modalField" placeholder="Client Name" required>
+                    <input type="email" id="email" class="modalField" placeholder="E-mail" required>
+                    <input type="number" id="phoneNumber" class="modalField" placeholder="Number"
                         required>
-                    <input type="text" id="city" dataIndex="new" class="modalField" placeholder="City" required>
+                    <input type="text" id="city" class="modalField" placeholder="City" required>
                 </form>
                 <!-- Save and Cancel Area -->
                 <footer id="modalFooter">

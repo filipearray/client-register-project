@@ -83,7 +83,7 @@
     width: 1px;
 }
 
-#save, #cancel{
+#save, #cancel, .editBtn, .delBtn{
     height: 35px;
     padding: 0 20px;
     cursor: pointer;
@@ -97,10 +97,10 @@
     transition: 0.3s;
 }
 
-#save:hover{
+#save:hover, .editBtn:hover{
     color: #00ff0075;
 }
 
-#cancel:hover{
+#cancel:hover, .delBtn:hover{
     color: #ff000075;
 }
