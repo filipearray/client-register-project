@@ -83,6 +83,7 @@ input[type=number]::-webkit-outer-spin-button {
     header {
         position: fixed;
         width: 100%;
+        align-items: center;
     }
     #mainHeader{
         font-size: 1.5rem;
