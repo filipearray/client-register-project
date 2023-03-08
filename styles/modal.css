@@ -73,6 +73,23 @@
     background-color: inherit;
 }
 
+@media (max-width: 990px){
+    #modalSection{
+        top: 100%;
+        transition: all 1s ease;
+    }
+    #modalSection.active{
+        top: 0;
+    }
+    #modalContent{
+        margin: 0;
+        width: 100%;
+        position: fixed;
+    }
+    .modalField{
+        width: 100%;
+    }
+}
 
 
 

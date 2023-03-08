@@ -78,3 +78,19 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
+
+@media (max-width: 990px){
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    #mainHeader{
+        font-size: 1.5rem;
+    }
+    main{
+        padding: 0;
+        margin: 20px 0 0 0;
+        width: 100%;
+        box-shadow: none;
+    }
+}

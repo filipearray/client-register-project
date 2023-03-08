@@ -25,3 +25,31 @@ td:nth-child(5){
     background-color: #0D1117;
 }
 
+@media(max-width: 990px){
+    table{
+        border-spacing: 5px;
+    }
+    thead{
+        display: none;
+    }
+    table tr{
+        box-shadow: 2px 2px 4px var(--var-shadow);
+    }
+    table td:not(:first-child){
+        display: flex;
+        justify-content: left;
+        padding: 0 20px;
+    }
+
+    table td{
+        margin: 10px 0;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    table tr:hover{
+        background-color: inherit;
+    }
+}
+
