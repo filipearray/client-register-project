@@ -115,6 +115,7 @@
         position: fixed;
         top: 90vh;
         left: 80vw;
+        position: fixed;
     }
     #newClientBtn::before{
         content: "+";
