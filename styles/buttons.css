@@ -113,8 +113,8 @@
         height: 60px;
         border-radius: 50%;
         position: fixed;
-        top: 88vh;
-        left: 85vw;
+        top: 90vh;
+        left: 80vw;
     }
     #newClientBtn::before{
         content: "+";
