@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD - Client Register</title>
+    <title>Client Register - CRUD</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
+
 <body>
-    <header>
+    <header id="mainHeader">
         <h1>Client Register</h1>
     </header>
 
     <main>
-       <button type="button" id="newClientBtn">New Client</button>
+        <button type="button" id="newClientBtn">New Client</button>
+
+        <!-- Here, client data will be added. -->
+
+        <div id="modal">
+            <div id="modalContent">
+                <!-- Modal Header -->
+                <header id="modalHeader">
+                    <h2>New Client</h2>
+                    <button class="close-button">
+                        <div class="close-button__line close-button__line--first"></div>
+                        <div class="close-button__line close-button__line--second"></div>
+                    </button>
+                </header>
+                <!-- Modal Inputs -->
+                <form id="form">
+                    <input type="text" id="name" dataIndex="new" class="modalField" placeholder="Client Name" required>
+                    <input type="email" id="email" dataIndex="new" class="modalField" placeholder="E-mail" required>
+                    <input type="number" id="phoneNumber" dataIndex="new" class="modalField" placeholder="Number"
+                        required>
+                    <input type="text" id="city" dataIndex="new" class="modalField" placeholder="City" required>
+                </form>
+                <!-- Save and Cancel Area -->
+                <footer id="modalFooter">
+                    <button id="save">Save</button>
+                    <button id="cancel">Cancel</button>
+                </footer>
+            </div>
     </main>
+
+    <footer id="mainFooter">
+        Desenvolvido por <a href="https://github.com/filipearray" target="_blank">Filipe Guimarães</a>
+    </footer>
 </body>
+
 </html>

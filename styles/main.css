@@ -8,6 +8,10 @@
 
 body{
     background-color: var(--var-secundary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
 }
 
 :root{
@@ -16,7 +20,7 @@ body{
     --var-secundary-color: #161B22; 
 }
 
-header{
+#mainHeader{
     text-align: center;
     background-color: var(--var-primary-color);
     color: var(--var-white);
@@ -41,3 +45,17 @@ main{
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     background-color: var(--var-primary-color);
 }
+
+#mainFooter, a{
+    text-decoration: none;
+    color: var(--var-white);
+    font-weight: 800;
+}
+
+#mainFooter{
+    width:100;
+    text-align: center;
+    font-weight: 200;
+    padding: 20px;
+}
+
