@@ -2,6 +2,7 @@
     --var-white: #fff;
     --var-primary-color: #0D1117;
     --var-secundary-color: #161B22; 
+    --var-shadow: rgba(0, 0, 0, 0.25);
 }
 
 #newClientBtn{
@@ -34,7 +35,14 @@
     width: 3rem;
 
     /* Used to position the inner */
-    position: relative;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    transition: 0.3s;
 }
 
 .close-button__line {
@@ -47,6 +55,10 @@
     /* Size */
     height: 1px;
     width: 100%;
+}
+
+.close-button:hover{
+ background-color: #161B22;
 }
 
 .close-button__line--first {
@@ -69,4 +81,26 @@
     /* Size */
     height: 100%;
     width: 1px;
+}
+
+#save, #cancel{
+    height: 35px;
+    padding: 0 20px;
+    cursor: pointer;
+    background-color: var(--var-secundary-color);
+    color: var(--var-white);
+    border-style: none;
+    border-radius: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+    user-select: none;
+    transition: 0.3s;
+}
+
+#save:hover{
+    color: #00ff0075;
+}
+
+#cancel:hover{
+    color: #ff000075;
 }

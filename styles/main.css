@@ -18,6 +18,7 @@ body{
     --var-white: #fff;
     --var-primary-color: #0D1117;
     --var-secundary-color: #161B22; 
+    --var-shadow: rgba(0, 0, 0, 0.25);
 }
 
 #mainHeader{
@@ -27,7 +28,7 @@ body{
     padding: 10px;
 }
 
-h1::selection{
+h1::selection, #newClientBtn::selection, a::selection, #mainFooter::selection{
     background-color: var(--var-white);
     color: var(--var-primary-color); /* Analogous colors */
 }
@@ -42,7 +43,7 @@ main{
     padding: 50px;
     align-items: flex-start;
     gap: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 15px var(--var-shadow);
     background-color: var(--var-primary-color);
 }
 
@@ -53,9 +54,27 @@ main{
 }
 
 #mainFooter{
-    width:100;
+    width: 100;
     text-align: center;
     font-weight: 200;
     padding: 20px;
 }
 
+th{
+    color: var(--var-white);
+    height: 50px;
+    background-color: var(--var-secundary-color);
+    padding-left: 20px;
+    font-size: 1rem; 
+}
+
+table{
+    text-align: left;
+    width: 100%;
+    user-select: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
