@@ -2,7 +2,7 @@
 
 This project was conditioned with the functionality/feature: Create, Read, Update and Delete (CRUD). A basic client register susceptible to data edits and deletions. The technologies used in this project were:
 
-- JavaScript
+- JavaScript (por enquanto, vou adaptar para TS)
 - CSS3
 - HTML5
 
