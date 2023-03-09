@@ -6,7 +6,7 @@ This project was conditioned with the functionality/feature: Create, Read, Updat
 - CSS3
 - HTML5
 
-Click [here](https://filipearray.github.io/cilent-register-project/) to visit the project page.
+Click [here](https://filipearray.github.io/client-register-project/) to visit the project page.
 
 ---
 
